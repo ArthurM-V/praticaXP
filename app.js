@@ -1,4 +1,3 @@
-// Lógica de hábitos e interface Alpine.js no mesmo arquivo.
 
   function dateKey(date = new Date()) {
     const y = date.getFullYear();
@@ -32,7 +31,7 @@
 
   function getProgress(habits, date) {
     const completed = habits.filter(habit => isCompleted(habit, date)).length;
-    return { completed, total: habits.length, percent: habits.length ? Math.round((completed / habits.length) * 100) : 0 };
+    return { completed, total: habits.length, percent: habits.length ? Math.round((completed / habits.length) * 10) : 0 };
   }
 
 
